@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header  page-header--inner">
+      <div class="page-header__nav">
+        <a href="/"><img src="img/logo.png" alt="City of Sedona"></a>
+
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Оставить отзыв</a></li>
+            <li><a href="#">Блог шерифа</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+
+          <button class="site-nav__open-button" type="button">Показать меню</button>
+          <button class="site-nav__hide-button" type="button">Скрыть меню</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="review">
+        <h2>Оставьте свой отзыв</h2>
+        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+        <form class="review__form" action="#">
+          <fieldset>
+              <legend>Представьтесь, пожалуйста:</legend>
+              <label>Фамилия:<input type="text"></label>
+              <label>Имя: <input type="text"></label>
+              <label>Отчество: <input type="text"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ваше общее впечатление:</legend>
+            <label><input type="radio"> Скорее положительное</label>
+            <label><input type="radio"> Скорее отрицательное</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Даты вашей поздки:</legend>
+            <label>Дата приезда: <input type="date"></label>
+            <label>Длительность пребывания: <input type="range"></label>
+            <label>Дата отъезда: <input type="date"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Количество путешественников:</legend>
+            <label><input type="range"> Количество путешественников:</label>
+
+            <div>
+              <div><label>№ <input type="number"></label></div>
+
+              <div>
+                <label>Фамилия <input type="text">:</label>
+                <label>Имя: <input type="text"></label>
+                <label>Отчество: <input type="text"></label>
+              </div>
+            </div>
+
+            <div>
+              <div><label>№ <input type="number"></label></div>
+
+              <div>
+                <label>Фамилия: <input type="text"></label>
+                <label>Имя: <input type="text"></label>
+                <label>Отчество: <input type="text"></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Посещенные достопримечательности:</legend>
+            <label><input type="checkbox"> Мост Дьявола</label>
+            <label><input type="checkbox"> Слайд-парк</label>
+            <label><input type="checkbox"> Гора-Колокол</label>
+            <label><input type="checkbox"> Красные скалы</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Загрузите фотографии:</legend>
+            <input type="file" value="Выбрать фотографии">
+          </fieldset>
+
+          <input type="submit" value="Отправить отзыв">
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <div class="hash">#visitsedona</div>
+
+        <ul class="social">
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Фэйсбук</a></li>
+          <li><a href="#">Ютуб</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
